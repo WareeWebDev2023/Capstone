@@ -1,10 +1,9 @@
+import Homepage from './Homepage';
+import Section from './Section';
 function Main() {
     return (
 
-        <main>
-
-        </main>
-
+        <Homepage></Homepage>
 
     );
 }
