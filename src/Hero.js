@@ -1,4 +1,4 @@
-function Hero() {
+function Hero({ setPage }) {
     return (
 
         <header>
@@ -6,7 +6,8 @@ function Hero() {
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>Authentic Italian food in town<br></br>Best taste like homemade cooking<br></br>from your Grandma Kitchen.</p>
-                <button>Reserve a Table</button>
+                <button
+                    onClick={() => setPage("Booking")}>Reserve a Table</button>
             </div>
             <img src="images/restauranfood.png" />
 

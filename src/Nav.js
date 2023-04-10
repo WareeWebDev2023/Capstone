@@ -8,7 +8,7 @@ function Nav() {
                 <li><a href="About.html">About</a></li>
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="Reservations.html">Reservations</a></li>
-                <li><a href="Orderonline.html">Order Online</a></li>
+                <li><a href="OrderOnline.html">Order Online</a></li>
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>

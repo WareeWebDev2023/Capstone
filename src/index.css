@@ -147,6 +147,72 @@ div.ratings .fa-star {
   flex-grow: 1;
 }
 
+#chicago {
+  display: flex;
+  padding: 20px;
+  height: 350px;
+}
+
+#chicago > div {
+  width: 40%;
+}
+
+#chicago img {
+  max-width: 150px;
+}
+
+#chicago img.under {
+  position: relative;
+  left: -50px;
+  top: 100px;
+  z-index: -1;
+  margin: 10;
+}
+
+#chicago img.over {
+  position: relative;
+  left: 200px;
+  top: 0px;
+  z-index: 1;
+}
+
+.booking-container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #495E57;
+  padding: 20px;
+}
+
+.booking-container label{
+  display: block;
+  color:  #cccccc;
+}
+
+.booking-container input {
+  /* display: block; */
+  margin: 10px auto;
+}
+
+.booking-container header {
+  background-color: #495E57;;
+}
+
+.booking-container h3 {
+  background-color: #F4CE14;
+  color: #495E57;
+  width: auto;
+  padding: 0.75em;
+  border-radius: 16px;
+}
+
+.booking-container button {
+  display: block;
+  margin: 10px auto;
+  background-color: #F4CE14;
+  color: #495E57;
+  font-size: large;
+  border-radius: 16px;
+}
 
 
 

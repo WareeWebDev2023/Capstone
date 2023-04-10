@@ -1,32 +1,37 @@
 import React from "react";
 
+function Rating({ img, rating, comment }) {
+    let numRating = parseInt(rating);
+    return (<div className="column">
+        <div className="ratings">
+            <span className={"fa fa-star " + (numRating >= 1 ? "checked" : "")}></span>
+            <span className={"fa fa-star " + (numRating >= 2 ? "checked" : "")}></span>
+            <span className={"fa fa-star " + (numRating >= 3 ? "checked" : "")}></span>
+            <span className={"fa fa-star " + (numRating >= 4 ? "checked" : "")}></span>
+            <span className={"fa fa-star " + (numRating >= 5 ? "checked" : "")}></span>
+        </div>
+        <img src={img} />
+        <h3>{comment}</h3>
+    </div >);
+}
+
 function Testimonials() {
     return <div id="testimonials">
-
         <h1>Testimonials</h1>
-        <div class="container">
-            <div class="column">
-                <h2> Rating</h2>
-                <div class="ratings">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </div>
-                <img src="images/ManLaugh.png" />
-                <p>Great food! Great service!</p>
-            </div>
-            <div class="column">
-                <h2> second column </h2>
-                <p> This is second column of our grid system</p>
-            </div>
-            <div class="column">
-                <h2> Third column </h2>
-                <p> This is third column of our grid system</p>
-            </div>
+        <div className="container">
+            <Rating
+                img="images/ManLaugh.png"
+                comment="Great food! Great Service!"
+                rating="5" />
+            <Rating
+                img="images/OleWomen.png"
+                comment="Delicious Pasta!"
+                rating="4" />
+            <Rating
+                img="images/WomenSkinHead.png"
+                comment="The Bruchetta is scrumptious"
+                rating="5" />
         </div>
-
     </div>
 }
 

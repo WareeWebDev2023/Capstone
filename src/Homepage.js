@@ -4,9 +4,10 @@ import Specials from "./Specials";
 import Testimonials from "./Testimonials";
 import Chicago from "./Chicago";
 
-function Homepage() {
+function Homepage({ setPage, currentPage }) {
     return <>
-        <Hero></Hero>
+        <Hero
+            setPage={setPage}></Hero>
         <Specials></Specials>
         <Testimonials></Testimonials>
         <Chicago></Chicago>

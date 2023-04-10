@@ -4,7 +4,7 @@ function Section({ header }) {
     const header1 = "bla bla bla";
     return (
 
-        <section class="grid-item">{header}</section>
+        <section className="grid-item">{header}</section>
 
 
     );
